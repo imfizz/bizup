@@ -2,7 +2,7 @@
     @include center-y
     gap: 50px
     padding: 100px 240px
-    @media (min-width: 500px) 
+    @media (max-width: 500px) 
         padding: 50px 40px
 
     .e-headline
@@ -19,13 +19,13 @@
         p
             
             text-align: center
-            @media (min-width: 500px) 
+            @media (max-width: 500px) 
                 width: auto
 
     .e-circles-container
         @include separate-x
         gap: 20px
-        @media (min-width: 500px) 
+        @media (max-width: 500px) 
                 @include separate-y
 
         .circle

@@ -5,7 +5,7 @@
     background-image: linear-gradient(rgba(13, 53, 96, 0.74), rgba(13, 53, 96, 0.74)), url('../images/testimonials.jpg')
     background-size: cover
     background-position: center center
-    @media (min-width: 500px) 
+    @media (max-width: 500px) 
         padding: 50px 40px
 
     .t-headline
@@ -23,7 +23,7 @@
         @include separate-x
         gap: 20px
         position: relative
-        @media (min-width: 500px) 
+        @media (max-width: 500px) 
             @include separate-y
 
         .card
