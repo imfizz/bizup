@@ -1,0 +1,94 @@
+.contact-us
+    @include center-y
+    padding: 100px 240px
+    background-image: url('../images/contactus.jpg')
+    background-size: cover
+    background-position: center center
+    @media (min-width: 500px) 
+        padding: 50px 40px
+
+    .form-container
+        @include align-x
+        @media (min-width: 500px) 
+            @include align-y
+
+        form
+            @include align-y
+            gap: 10px
+            background: white
+            padding: 50px 40px
+
+            h3
+                font-size: 16px
+                color: $blue
+
+            h2
+                font-size: 34px
+    
+            .inputs
+                @include align-y
+                gap: 20px
+                flex-wrap: wrap
+
+                input 
+                    border: none
+                    background-color: #f5f5f5
+                    width: 350px
+                    height: 40px
+                    outline: none
+                    text-indent: 1rem
+
+                textarea
+                    height: 200px
+                    border: none
+                    background-color: #f5f5f5
+                    text-indent: 1rem
+                    padding: 10px 0
+                    outline: none
+
+            button
+                    width: 180px
+                    margin-top: 10px
+                    padding: 10px 20px
+                    background: $blue
+                    border: none
+                    color: white
+                    font-weight: $subhead
+                    font-size: 16px
+                    cursor: pointer
+
+                    &:hover
+                        background: lighten($blue, 5)
+
+        .contact-info
+            @include align-y
+            gap: 20px
+            padding: 50px 40px
+            background-image: linear-gradient(#ffffffa8, #ffffff94), url('../images/contactus2.jpg')
+            background-size: cover
+            background-position: center center
+
+            h2
+                font-size: 24px
+
+            .contact-col-container
+                @include align-y
+                gap: 20px
+
+                .contact-col 
+                    @include align-x
+                    gap: 20px
+
+                    .contact-circle
+                        height: 50px
+                        width: 50px
+                        background: $blue
+                        border-radius: 50%
+                        @include center-y
+                        color: white
+
+                    h4
+                        font-size: 18px
+
+                    span
+                        color: #353535

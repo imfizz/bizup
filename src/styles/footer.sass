@@ -1,0 +1,133 @@
+.footer
+    @include align-y
+    gap: 100px
+    padding-top: 100px
+    background: #121212
+    color: white
+
+
+    .grid-4 
+        @include align-x
+        justify-content: space-between
+        gap: 50px
+        width: 100%
+        position: relative
+        padding: 0 240px
+        @media (min-width: 500px) 
+            padding: 0 40px
+            @include align-y
+
+        .company-details 
+            @include align-y
+            gap: 20px
+            max-width: 20%
+            position: relative
+            @media (min-width: 500px) 
+                max-width: 100%
+
+            .company-logo
+                background-size: cover
+                background-position: center center
+                background-image: url('../images/logo_lite.png')
+                height: 40px
+                width: 150px
+
+            p
+                width: 100%
+                margin-bottom: 20px
+
+            .company-icons-footer
+                @include align-x
+                gap: 20px
+
+                .icon
+                    @include center-y
+                    padding: 5px
+                    background: #1c2024
+                    cursor: pointer
+
+                    &:hover
+                        background: $blue
+
+        .our-services-footer
+            @include align-y
+            gap: 10px
+
+            .small-border
+                height: 5px
+                width: 60px
+                background: $blue
+
+            p
+                margin-top: 10px
+
+        .contact-info-footer
+            @include align-y
+            gap: 10px
+
+            .small-border
+                height: 5px
+                width: 60px
+                background: $blue
+                margin-bottom: 10px
+
+            .contact-container
+                @include align-x
+                gap: 10px
+
+                .contact-icon
+                    color: $blue
+
+        .newsletter
+            @include align-y
+            gap: 10px
+
+            .small-border
+                height: 5px
+                width: 60px
+                background: $blue
+                margin-bottom: 10px
+
+            p
+                width: 60%
+                margin-bottom: 20px
+
+            form
+                @include align-y
+                gap: 20px
+                width: 60%
+                position: relative
+
+                input
+                    height: 70px
+                    text-indent: 2rem
+                    border: none
+                    outline: none
+
+                button
+                    width: 70%
+                    padding: 15px 10px
+                    background: $blue
+                    border: none
+                    color: white
+                    font-weight: $subhead
+                    font-size: 14px
+                    cursor: pointer
+
+                    &:hover
+                        background: lighten($blue, 5)
+
+
+    .finalfooter
+        @include separate-x
+        background: black
+        padding: 30px 240px
+        @media (min-width: 500px) 
+            @include separate-y
+            padding: 30px 40px
+            gap: 40px
+
+        ul 
+            @include align-x
+            gap: 40px
+            list-style: circle

@@ -1,0 +1,67 @@
+.portfolios
+    background: #fafafa
+    padding: 100px 40px
+    @include align-y
+    gap: 30px
+
+    .p-head
+        @include align-y
+        padding: 0 240px
+        @media (min-width: 500px) 
+            padding: 0px 0px
+
+        h3
+            color: $blue
+            font-size: 16px
+
+        .title
+            @include separate-x
+
+            h2
+                font-size: 34px
+
+            button
+                width: 220px
+                padding: 15px 20px
+                background: #0082f1
+                border: none
+                color: white
+                font-weight: 600
+                font-size: 18px
+                cursor: pointer
+
+                &:hover
+                    background: lighten($blue, 5)
+
+    .p-cards-container
+        @include align-x
+        gap: 20px
+        flex-wrap: nowrap
+        overflow-x: auto
+
+        /* width */
+        &::-webkit-scrollbar
+            width: 0px
+        
+
+        .p-card
+            flex-basis: 700
+            min-width: 400px
+            min-height: 600px
+            background: red
+            display: flex
+            align-items: flex-end
+            padding: 30px
+            background-size: cover
+            @media (min-width: 500px) 
+                min-height: 300px
+
+            .p-card-content
+                @include align-y
+
+                span
+                    color: white
+
+                h3
+                    color: white
+                    font-size: 24px

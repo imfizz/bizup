@@ -1,0 +1,108 @@
+.chooseus
+    @include center-x
+    gap: 50px
+    padding: 50px 240px
+    @media (min-width: 500px) 
+        @include center-y
+        padding: 0px 40px 50px 40px
+
+    .c-left
+        position: relative
+
+        .chooseus-img
+            height: 578px
+            width: 564px
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/chooseus.jpg')
+            background-size: cover
+            background-position: center center
+            @media (min-width: 500px) 
+                height: 378px
+                width: 364px
+
+        .pulse
+            height: 80px
+            width: 80px
+            border-radius: 50%
+            background: #0082f1c7
+            cursor: pointer
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            @include center-y
+            color: white
+            transition: 100ms ease-in-out
+
+            &:hover
+                height: 90px
+                width: 90px
+
+    .c-right
+        @include align-y
+        gap: 20px
+
+        h3
+            font-size: 16px
+            color: $blue
+
+        h2
+            font-size: 34px
+            width: 600px
+            @media (min-width: 500px)
+                width: auto
+
+        p
+            width: 600px
+            @media (min-width: 500px)
+                width: auto
+
+        .percentages
+            @include align-y
+            gap: 20px
+
+            .progress-container
+                @include align-y
+                gap: 10px
+
+                & > .progress-title > .progress-bar:nth-child(1)
+                    
+
+                .progress-title
+                    @include separate-x
+
+                .progress-bar
+                    height: 5px
+                    background: #e6e6e6
+                    position: relative
+
+                    &.p1
+                        &::before
+                            content: ""
+                            height: 5px
+                            position: absolute
+                            width: 92%
+                            background: $blue
+
+                    &.p2
+                        &::before
+                            content: ""
+                            height: 5px
+                            position: absolute
+                            width: 90%
+                            background: $blue
+                    
+                    &.p3
+                        &::before
+                            content: ""
+                            height: 5px
+                            position: absolute
+                            width: 85%
+                            background: $blue
+
+                    &.p4
+                        &::before
+                            content: ""
+                            height: 5px
+                            position: absolute
+                            width: 95%
+                            background: $blue
