@@ -2,6 +2,11 @@ import React from 'react'
 import PersonIcon from '@mui/icons-material/Person'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 
+// images
+import LatestNews1 from '../images/latestnews.webp'
+import LatestNews2 from '../images/latestnews2.webp'
+import LatestNews3 from '../images/latestnews3.webp'
+
 function LatestNews() {
   return (
     <div className="latestnews">
@@ -13,7 +18,7 @@ function LatestNews() {
             </div>
             <div className="l-card-container">
                 <div className="l-card">
-                    <img src="../images/latestnews.webp" alt="" />
+                    <img src={LatestNews1} alt="Latest News" />
                     <div className="datetime">
                         <span>
                             <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}} />
@@ -28,7 +33,7 @@ function LatestNews() {
                     <p>We denounce with righteous indige nation and dislike men who are so beguiled...</p>
                 </div>
                 <div className="l-card">
-                    <img src="../images/latestnews2.webp" alt="" />
+                    <img src={LatestNews2} alt="Latest News" />
                     <div className="datetime">
                         <span>
                             <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}} />
@@ -43,7 +48,7 @@ function LatestNews() {
                     <p>We denounce with righteous indige nation and dislike men who are so beguiled...</p>
                 </div>
                 <div className="l-card">
-                    <img src="../images/latestnews3.webp" alt="" />
+                    <img src={LatestNews3} alt="Latest News" />
                     <div className="datetime">
                         <span>
                             <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}}/>

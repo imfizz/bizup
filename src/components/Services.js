@@ -1,5 +1,11 @@
 import React from 'react'
 
+// icons
+import Income from '../images/icons/income.png'
+import Note from '../images/icons/note.png'
+import Chart from '../images/icons/chart.png'
+import Calculator from '../images/icons/calculator.png'
+
 function Services() {
     
   return (
@@ -10,22 +16,22 @@ function Services() {
         </div>
         <div className="cards-container">
             <div className="card">
-                <img src="../images/icons/income.png" alt="" />
+                <img src={Income} alt="Income Icon" />
                 <h4>Financial planning</h4>
                 <p>We always provide people a complete solution upon focused of any business.</p>
             </div>
             <div className="card">
-                <img src="../images/icons/note.png" alt="" />
+                <img src={Note} alt="Note Icon" />
                 <h4>Training services</h4>
                 <p>We always provide people a complete solution upon focused of any business.</p>
             </div>
             <div className="card">
-                <img src="../images/icons/chart.png" alt="" />
+                <img src={Chart} alt="Chart Icon" />
                 <h4>Marketing services</h4>
                 <p>We always provide people a complete solution upon focused of any business.</p>
             </div>
             <div className="card">
-                <img src="../images/icons/calculator.png" alt="" />
+                <img src={Calculator} alt="Calculator Icon" />
                 <h4>Taxation services</h4>
                 <p>We always provide people a complete solution upon focused of any business.</p>
             </div>

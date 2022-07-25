@@ -7,6 +7,7 @@ import DragHandleIcon from '@mui/icons-material/DragHandle'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import InstagramIcon from '@mui/icons-material/Instagram'
+import Logo from '../images/logoblue.png'
 
 function Navbar() {
 
@@ -30,7 +31,7 @@ function Navbar() {
   return (
     <header>
         <div className="top-head">
-            <a href="/"><img src="../images/logoblue.png" className="logo" alt="logo" /></a>
+            <a href="/"><img src={Logo} className="logo" alt="logo" /></a>
             <ul>
                 <li>
                     <MapOutlinedIcon style={topIcons} />
@@ -120,7 +121,7 @@ function Navbar() {
 
         <nav className="mobile">
             <a href="/">
-                <img src="../images/logoblue.png" alt="" />
+                <img src={Logo} alt="" />
             </a>
 
             <div className="rightSideNav">

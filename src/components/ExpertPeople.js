@@ -4,6 +4,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+// images
+import Expert1 from '../images/expert1.webp'
+import Expert2 from '../images/expert2.webp'
+import Expert3 from '../images/expert3.webp'
+import Expert4 from '../images/expert4.webp'
+
 function ExpertPeople() {
   return (
     <div className="expert-people">
@@ -14,7 +20,7 @@ function ExpertPeople() {
         </div>
         <div className="e-circles-container">
             <div className="circle">
-                <img src="../images/expert1.webp" alt="" />
+                <img src={Expert1} alt="Expert" />
                 <h3>Mike Jason</h3>
                 <p>Business Advisor</p>
                 <div className="circle-icons">
@@ -25,7 +31,7 @@ function ExpertPeople() {
                 </div>
             </div>
             <div className="circle">
-                <img src="../images/expert2.webp" alt="" />
+                <img src={Expert2} alt="Expert" />
                 <h3>Francis Ibikunle</h3>
                 <p>Senior Consultant</p>
                 <div className="circle-icons">
@@ -36,7 +42,7 @@ function ExpertPeople() {
                 </div>
             </div>
             <div className="circle">
-                <img src="../images/expert3.webp" alt="" />
+                <img src={Expert3} alt="Expert" />
                 <h3>Corey Anderson</h3>
                 <p>Assistant Director</p>
                 <div className="circle-icons">
@@ -47,7 +53,7 @@ function ExpertPeople() {
                 </div>
             </div>
             <div className="circle">
-                <img src="../images/expert4.webp" alt="" />
+                <img src={Expert4} alt="Expert" />
                 <h3>Mike Jason</h3>
                 <p>Business Manager</p>
                 <div className="circle-icons">

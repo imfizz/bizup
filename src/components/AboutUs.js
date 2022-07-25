@@ -1,12 +1,15 @@
 import React from 'react'
+import DotImg from '../images/aboutdot.png'
+import AboutImg from '../images/about.jpg'
+import CircleImg from '../images/aboutcircle.png'
 
 function AboutUs() {
   return (
     <div className="aboutus">
         <div className="left">
-            <img src="../images/aboutdot.png" alt="" />
-            <img src="../images/about.jpg" alt="" />
-            <img src="../images/aboutcircle.png" alt="" />
+            <img src={DotImg} alt="Dot" />
+            <img src={AboutImg} alt="About" />
+            <img src={CircleImg} alt="Circle" />
         </div>
         <div className="right">
             <h3>ABOUT US</h3>
