@@ -14,7 +14,7 @@ function Footer() {
     <div className="footer">
         <div className="grid-4">
             <div className="company-details">
-                <div className="company-logo"></div>
+                <a href="/"><div className="company-logo"></div></a>
                 <p>We denounce with righteous indig nation in and dislike men who are so beguiled and to demo realized by the, so blinded by desire, that they cannot foresee.</p>
                 <div className="company-icons-footer">
                     <div className="icon">

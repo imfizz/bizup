@@ -4,6 +4,7 @@
     background-image: url('../images/contactus.jpg')
     background-size: cover
     background-position: center center
+    background-attachment: fixed
     @media (max-width: 500px) 
         padding: 50px 40px
 
@@ -45,6 +46,7 @@
                     text-indent: 1rem
                     padding: 10px 0
                     outline: none
+                    resize: none
 
             button
                     width: 180px
@@ -67,9 +69,13 @@
             background-image: linear-gradient(#ffffffa8, #ffffff94), url('../images/contactus2.jpg')
             background-size: cover
             background-position: center center
+            @media (max-width: 500px) 
+                padding: 0px 40px 50px 40px
 
             h2
                 font-size: 24px
+                @media (max-width: 500px) 
+                    font-size: 34px
 
             .contact-col-container
                 @include align-y
@@ -92,3 +98,4 @@
 
                     span
                         color: #353535
+                        display: block

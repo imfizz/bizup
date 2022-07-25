@@ -14,13 +14,18 @@
         .l-title
             @include separate-x
             margin-bottom: 50px
+            @media (max-width: 500px) 
+                @include align-y
+                align-items: flex-start
+                justify-content: flex-start
+                gap: 10px
 
             h2
                 font-size: 34px
 
             button
                 width: 220px
-                padding: 15px 20px
+                padding: 10px 20px
                 background: #0082f1
                 border: none
                 color: white
@@ -51,7 +56,13 @@
                 .datetime
                     @include align-x
                     gap: 20px
+                    color: #343434
 
                 h3
                     font-size: 24px
                     color: black
+                    cursor: pointer
+                    transition: 100ms ease-in-out
+
+                    &:hover 
+                        color: $blue

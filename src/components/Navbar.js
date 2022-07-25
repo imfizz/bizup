@@ -1,17 +1,30 @@
 import React from 'react'
-import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
+import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
+import CallOutlinedIcon from '@mui/icons-material/CallOutlined'
 import SearchIcon from '@mui/icons-material/Search'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import DragHandleIcon from '@mui/icons-material/DragHandle'
+import FacebookIcon from '@mui/icons-material/Facebook'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import InstagramIcon from '@mui/icons-material/Instagram'
 
 function Navbar() {
 
   const topIcons = {
     fontSize: "40px",
     color: "#0082f1"
+  }
+
+  const searchStyle = {
+    color: "#333",
+    fontSize: "30px",
+    cursor: "pointer"
+  }
+
+  const menuStyle = {
+    color: "#0082f1",
+    fontSize: "40px",
+    cursor: "pointer"
   }
 
   return (
@@ -43,15 +56,15 @@ function Navbar() {
             </ul>
         </div>
 
-        <nav>
+        <nav className="notmobile">
             <ul>
-                <li>Home +
+                <li>Home
                     <ul>
                         <li>Multipages</li>
                         <li>Onepages</li>
                     </ul>
                 </li>
-                <li>Pages +
+                <li>Pages
                     <ul>
                         <li>About</li>
                         <li>Shop</li>
@@ -63,7 +76,7 @@ function Navbar() {
                         <li>Partners</li>
                     </ul>
                 </li>
-                <li>Portfolios +
+                <li>Portfolios
                     <ul>
                         <li>Portfolio One</li>
                         <li>Portfolio Two</li>
@@ -75,7 +88,7 @@ function Navbar() {
                         <li>Portfolios Filter</li>
                     </ul>
                 </li>
-                <li>Services +
+                <li>Services
                     <ul>
                         <li>Services Style 1</li>
                         <li>Services Style 2</li>
@@ -88,7 +101,7 @@ function Navbar() {
                     </ul>
                 </li>
                 <li>Blog</li>
-                <li>Contact +
+                <li>Contact
                     <ul>
                         <li>Contact 1</li>
                         <li>Contact 2</li>
@@ -97,11 +110,22 @@ function Navbar() {
                 </li>
             </ul>
 
-            <div className="nav-icons">
-                <SearchIcon style={{borderRight: "2px solid white", width: "60px", cursor: "pointer"}} />
-                <FacebookIcon style={{cursor: "pointer"}} />
-                <TwitterIcon style={{cursor: "pointer"}} />
-                <InstagramIcon style={{cursor: "pointer"}} />
+            <div className="nav-icons-container">
+                <SearchIcon className="nav-icon" />
+                <FacebookIcon className="nav-icon"  />
+                <TwitterIcon className="nav-icon" />
+                <InstagramIcon className="nav-icon" />
+            </div>
+        </nav>
+
+        <nav className="mobile">
+            <a href="/">
+                <img src="../images/logoblue.png" alt="" />
+            </a>
+
+            <div className="rightSideNav">
+                <SearchIcon style={searchStyle} />
+                <DragHandleIcon style={menuStyle} />
             </div>
         </nav>
     </header>

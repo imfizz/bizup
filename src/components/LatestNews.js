@@ -16,11 +16,11 @@ function LatestNews() {
                     <img src="../images/latestnews.webp" alt="" />
                     <div className="datetime">
                         <span>
-                            <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)"}} />
+                            <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}} />
                             admin
                         </span>
                         <span>
-                            <CalendarMonthIcon style={{color: "#0082f1", transform: "translateY(5px)"}} />
+                            <CalendarMonthIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}} />
                             05 May 2021
                         </span>
                     </div>
@@ -31,11 +31,11 @@ function LatestNews() {
                     <img src="../images/latestnews2.webp" alt="" />
                     <div className="datetime">
                         <span>
-                            <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)"}} />
+                            <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}} />
                             admin
                         </span>
                         <span>
-                            <CalendarMonthIcon style={{color: "#0082f1", transform: "translateY(5px)"}}/>
+                            <CalendarMonthIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}}/>
                             05 May 2021
                         </span>
                     </div>
@@ -46,11 +46,11 @@ function LatestNews() {
                     <img src="../images/latestnews3.webp" alt="" />
                     <div className="datetime">
                         <span>
-                            <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)"}}/>
+                            <PersonIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}}/>
                             admin
                         </span>
                         <span>
-                            <CalendarMonthIcon style={{color: "#0082f1", transform: "translateY(5px)"}}/>
+                            <CalendarMonthIcon style={{color: "#0082f1", transform: "translateY(5px)", marginRight: "5px"}}/>
                             05 May 2021
                         </span>
                     </div>

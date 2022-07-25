@@ -18,10 +18,10 @@ function ExpertPeople() {
                 <h3>Mike Jason</h3>
                 <p>Business Advisor</p>
                 <div className="circle-icons">
-                    <FacebookIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <InstagramIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <TwitterIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <LinkedInIcon style={{color: "#0082f1", cursor: "pointer"}}/>
+                    <FacebookIcon className="expert-icon" />
+                    <InstagramIcon className="expert-icon" />
+                    <TwitterIcon className="expert-icon" />
+                    <LinkedInIcon className="expert-icon" />
                 </div>
             </div>
             <div className="circle">
@@ -29,10 +29,10 @@ function ExpertPeople() {
                 <h3>Francis Ibikunle</h3>
                 <p>Senior Consultant</p>
                 <div className="circle-icons">
-                    <FacebookIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <InstagramIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <TwitterIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <LinkedInIcon style={{color: "#0082f1", cursor: "pointer"}}/>
+                    <FacebookIcon className="expert-icon" />
+                    <InstagramIcon className="expert-icon" />
+                    <TwitterIcon className="expert-icon" />
+                    <LinkedInIcon className="expert-icon" />
                 </div>
             </div>
             <div className="circle">
@@ -40,10 +40,10 @@ function ExpertPeople() {
                 <h3>Corey Anderson</h3>
                 <p>Assistant Director</p>
                 <div className="circle-icons">
-                    <FacebookIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <InstagramIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <TwitterIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <LinkedInIcon style={{color: "#0082f1", cursor: "pointer"}}/>
+                    <FacebookIcon className="expert-icon" />
+                    <InstagramIcon className="expert-icon" />
+                    <TwitterIcon className="expert-icon" />
+                    <LinkedInIcon className="expert-icon" />
                 </div>
             </div>
             <div className="circle">
@@ -51,10 +51,10 @@ function ExpertPeople() {
                 <h3>Mike Jason</h3>
                 <p>Business Manager</p>
                 <div className="circle-icons">
-                    <FacebookIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <InstagramIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <TwitterIcon style={{color: "#0082f1", cursor: "pointer"}}/>
-                    <LinkedInIcon style={{color: "#0082f1", cursor: "pointer"}}/>
+                    <FacebookIcon className="expert-icon" />
+                    <InstagramIcon className="expert-icon" />
+                    <TwitterIcon className="expert-icon" />
+                    <LinkedInIcon className="expert-icon" />
                 </div>
             </div>
         </div>

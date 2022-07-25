@@ -12,11 +12,11 @@ function ContactUs() {
                 <h3>CONTACT US</h3>
                 <h2>Get In Touch</h2>
                 <div className="inputs">
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="E-mail" />
-                    <input type="text" placeholder="Phone Number" />
-                    <input type="text" placeholder="Your Website" />
-                    <textarea placeholder="Your Message Here"/>
+                    <input type="text" placeholder="Name" autoComplete="off" />
+                    <input type="email" placeholder="E-mail" autoComplete="off" />
+                    <input type="text" placeholder="Phone Number" autoComplete="off" />
+                    <input type="text" placeholder="Your Website" autoComplete="off" />
+                    <textarea placeholder="Your Message Here" autoComplete="off" />
                 </div>
                 <button type="submit">Submit Now</button>
             </form>
@@ -29,7 +29,8 @@ function ContactUs() {
                         </div>
                         <div className="contact-details">
                             <h4>USA Office</h4>
-                            <span>127 Double Street, Dublin, United Kingdom.</span>
+                            <span>127 Double Street, Dublin</span>
+                            <span>United Kingdom</span>
                         </div>
                     </div>
                     <div className="contact-col">

@@ -5,6 +5,7 @@
     background-image: linear-gradient(rgba(13, 53, 96, 0.74), rgba(13, 53, 96, 0.74)), url('../images/testimonials.jpg')
     background-size: cover
     background-position: center center
+    background-attachment: fixed
     @media (max-width: 500px) 
         padding: 50px 40px
 
@@ -40,7 +41,7 @@
                 margin-bottom: 20px
 
             i
-                color: white
+                color: #e1e1e1
                 text-align: center
 
             h3
@@ -49,5 +50,8 @@
                 color: white
                 margin-top: 20px
 
+                &:hover
+                    color: $blue
+
             span
-                color: white
+                color: #e1e1e1

@@ -25,12 +25,13 @@
             @media (max-width: 500px) 
                 max-width: 100%
 
-            .company-logo
-                background-size: cover
-                background-position: center center
-                background-image: url('../images/logo_lite.png')
-                height: 40px
-                width: 150px
+            a 
+                .company-logo
+                    background-size: cover
+                    background-position: center center
+                    background-image: url('../images/logo_lite.png')
+                    height: 40px
+                    width: 150px
 
             p
                 width: 100%
@@ -45,6 +46,8 @@
                     padding: 5px
                     background: #1c2024
                     cursor: pointer
+                    transition: 100ms ease-in-out
+                    border-radius: 3px
 
                     &:hover
                         background: $blue
@@ -97,6 +100,8 @@
                 gap: 20px
                 width: 60%
                 position: relative
+                @media (max-width: 500px) 
+                    width: 100%
 
                 input
                     height: 70px
@@ -113,6 +118,8 @@
                     font-weight: $subhead
                     font-size: 14px
                     cursor: pointer
+                    @media (max-width: 500px) 
+                        width: 50%
 
                     &:hover
                         background: lighten($blue, 5)
@@ -130,4 +137,17 @@
         ul 
             @include align-x
             gap: 40px
-            list-style: circle
+
+            li
+                cursor: pointer
+
+                &:hover
+                    color: gray
+                
+                &::before
+                    content: "\2022"
+                    color: $blue;
+                    font-weight: bold
+                    display: inline-block
+                    width: 1em
+                    margin-left: -1em

@@ -16,8 +16,8 @@
             background-size: cover
             background-position: center center
             @media (max-width: 500px) 
-                height: 378px
-                width: 364px
+                height: 398px
+                width: 384px
 
         .pulse
             height: 80px
@@ -28,14 +28,11 @@
             position: absolute
             top: 50%
             left: 50%
-            transform: translate(-50%, -50%)
+            transform: translate(-50%, -50%) scale(1)
             @include center-y
             color: white
-            transition: 100ms ease-in-out
-
-            &:hover
-                height: 90px
-                width: 90px
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+            animation: pulse-now 2s infinite
 
     .c-right
         @include align-y
@@ -106,3 +103,15 @@
                             position: absolute
                             width: 95%
                             background: $blue
+
+
+@keyframes pulse-now 
+    0% 
+        transform: translate(-50%, -50%) scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 130, 241, 0.7);
+    70% 
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 130, 241, 0);
+    100% 
+        transform: translate(-50%, -50%) scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 130, 241, 0);
